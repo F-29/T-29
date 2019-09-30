@@ -1,0 +1,15 @@
+{
+  "name": "myexpresswebserver",
+  "version": "0.0.1",
+  "description": "a web serever using express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mosich",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.0.4"
+  }
+}

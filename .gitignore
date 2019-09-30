@@ -1,0 +1,8 @@
+.vscode/
+node_modules/
+app1/
+
+log.txt
+index.js
+server.js
+tempEngn.js
