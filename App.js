@@ -2,6 +2,8 @@ const exp = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
 
+const Port = process.env.PORT || 3000;
+
 const app = exp();
 
 let logger = (req) => {
@@ -50,4 +52,6 @@ app.get('/about', (req, res) => {
     res.render('about.hbs', aboutData);
 });
 
-app.listen(8080);
+app.listen(Port, () => {
+    console.log(`Server is up on port: ${Port}`);
+});
