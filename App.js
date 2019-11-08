@@ -39,17 +39,25 @@ let homeData = {
     title: 'Home'
 };
 
-app.get('/', (req, res) => {
-    res.render('home.hbs', homeData);
-});
-
 let aboutData = {
     title: 'About Page',
     name: 'Mosi'
 };
 
+let proData = {
+    title: "Pro Page"
+};
+
+app.get('/', (req, res) => {
+    res.render('home.hbs', homeData);
+});
+
 app.get('/about', (req, res) => {
     res.render('about.hbs', aboutData);
+});
+
+app.get('/pro', (req, res) => {
+    res.render('pro.hbs', proData);
 });
 
 app.listen(Port, () => {
