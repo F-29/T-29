@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{title}}</title>
+    <title>{{ title }}</title>
 </head>
-<body>
-    {{> header}}
-    hi {{name}} This is The Year {{thisYear}}
-    {{> footer}}
+<body style="background-color: beige;">
+{{> header}}
+<h1 style="text-align: center;color: #7578;font-size: 70pt;margin-top: 220px;"><b>
+    This is About page
+</b>
+    {{name}}, This is The Year {{thisYear}}
+</h1>
+{{> footer}}
 </body>
 </html>
