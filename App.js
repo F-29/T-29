@@ -60,6 +60,19 @@ app.get('/pro', (req, res) => {
     res.render('pro.hbs', proData);
 });
 
+app.get('/posts', (req, res) => {
+    res.json([
+        {id: 1, title: "title 1", body: "body 1"},
+        {id: 2, title: "title 2", body: "body 2"},
+        {id: 3, title: "title 3", body: "body 3"},
+        {id: 4, title: "title 4", body: "body 4"},
+        {id: 5, title: "title 5", body: "body 5"},
+        {id: 6, title: "title 6", body: "body 6"},
+        {id: 7, title: "title 7", body: "body 7"},
+        {id: 8, title: "title 8", body: "body 8"},
+    ]);
+});
+
 app.listen(Port, () => {
     console.log(`Server is up on port: ${Port}`);
 });
