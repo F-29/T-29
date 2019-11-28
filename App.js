@@ -2,7 +2,7 @@ const exp = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
 
-const Port = process.env.PORT || 3000;
+const Port = process.env.PORT || 3001;
 
 const app = exp();
 
@@ -66,11 +66,38 @@ app.get('/posts', (req, res) => {
         {id: 2, title: "title 2", body: "body 2"},
         {id: 3, title: "title 3", body: "body 3"},
         {id: 4, title: "title 4", body: "body 4"},
-        {id: 5, title: "title 5", body: "body 5"},
-        {id: 6, title: "title 6", body: "body 6"},
-        {id: 7, title: "title 7", body: "body 7"},
-        {id: 8, title: "title 8", body: "body 8"},
+        {id: 5, title: "title 5", body: "body 5"}
     ]);
+});
+
+app.get('/posts/1', (req, res) => {
+    res.json(
+        {id: 1, title: "title 1", body: "body 1"}
+        );
+});
+
+app.get('/posts/2', (req, res) => {
+    res.json(
+        {id: 1, title: "title 2", body: "body 2"}
+    );
+});
+
+app.get('/posts/3', (req, res) => {
+    res.json(
+        {id: 1, title: "title 3", body: "body 3"}
+    );
+});
+
+app.get('/posts/4', (req, res) => {
+    res.json(
+        {id: 1, title: "title 4", body: "body 4"}
+    );
+});
+
+app.get('/posts/5', (req, res) => {
+    res.json(
+        {id: 5, title: "title 5", body: "body 5"}
+    );
 });
 
 app.listen(Port, () => {
